@@ -1,6 +1,10 @@
 # Reader Capture
 
-Reader Capture records short clips of Mac system audio and reads the current VoiceOver phrase through a local stdio MCP server. Use a fictional page first so you can tell what each piece of evidence represents. Android TalkBack requires a separate Android session.
+Once you start VoiceOver on your Mac, an AI coding agent connected to Reader Capture can drive VoiceOver to test a website in Safari. The agent can navigate the page, activate controls, and report where VoiceOver focus lands. You can also ask it to record a short clip of system audio for local playback.
+
+**Try it with your agent.** After [connecting your agent](#run-the-fictional-example), open the bundled [practice page](examples/calibration.html) locally in Safari and place the VoiceOver cursor on the “Capture check” button.
+
+> Use VoiceOver to activate the “Capture check” button. Tell me which control has VoiceOver focus when the dialog opens. Then activate Close and tell me where focus lands.
 
 ## Build and check on a Mac
 
