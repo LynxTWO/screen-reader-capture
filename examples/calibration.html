@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reader Capture practice page</title>
+<main>
+  <h1>Reader Capture practice page</h1>
+  <button id="opener" type="button" aria-haspopup="dialog">Capture check. Ten seconds. Thirty seconds.</button>
+  <dialog aria-labelledby="dialog-title">
+    <h2 id="dialog-title">Practice dialog</h2>
+    <form method="dialog"><button autofocus>Close</button></form>
+  </dialog>
+</main>
+<script>
+  const openerButton = document.querySelector('#opener');
+  const dialog = document.querySelector('dialog');
+  openerButton.addEventListener('click', () => dialog.showModal());
+  dialog.addEventListener('close', () => openerButton.focus());
+</script>
+</html>

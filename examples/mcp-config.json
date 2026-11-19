@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "reader-capture": {
+      "command": "/absolute/path/to/node",
+      "args": ["/absolute/path/to/reader-capture/src/server.mjs"],
+      "env": {
+        "READER_CAPTURE_HELPER": "/absolute/path/to/reader-capture/.build-app/ReaderCaptureAudio.app/Contents/MacOS/audio-capture-helper",
+        "READER_CAPTURE_OUTPUT": "/absolute/path/to/reader-capture/work/captures"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "backend": "whisper",
+  "modelDirectory": "work/models/large-v3",
+  "modelRepository": "Systran/faster-whisper-large-v3",
+  "modelRevision": "edaa852ec7e145841d8ffdb056a99866b5f0a478",
+  "scope": "Detailed English accessibility transcript review on macOS/Samantha/rate0.5; chosen for name, role and state agreement in the local corpus",
+  "evidence": "docs/ASR-EVALUATION.md",
+  "transcriptIsAcceptanceVerdict": false,
+  "knownLimitations": [
+    "Raw model invented words on digital silence and a non-speech tone. The observer abstains on digital silence before inference; nonzero noise remains unqualified.",
+    "Compare with genuine VoiceOver text and action timing. A mismatch, missing evidence or unexpected speech is inconclusive, not an app pass or fail.",
+    "Pronunciation, other voices/rates/languages and mobile readers remain unqualified."
+  ],
+  "fastCrossCheck": {
+    "backend": "parakeet-fp32",
+    "modelDirectory": "work/models/parakeet-v3-fp32"
+  }
+}
